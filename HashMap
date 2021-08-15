@@ -1,0 +1,45 @@
+-Map is considered as collection of entry objects
+-Heterogeneous objects are allowed
+-based on Hashtable data structure
+-Insertion order not preserved
+-duplicate keys are not allowed,values can have duplicates
+-Null allowed for key only once
+-values can be null
+-Implements Serializable and cloaneable interface
+-best choice if frequent operation is search
+
+HashMap                   Hashtable
+not thread safe.           thread safe
+perfo high
+null allowed once for keys not aloowed
+and vlaues
+
+To access a value one must know its key. HashMap is known as HashMap because it uses a technique called Hashing. 
+Hashing is a technique of converting a large String to small String that represents the same String.
+A shorter value helps in indexing and faster searches. HashSet also uses HashMap internally.
+
+Internally HashMap contains an array of Node and a node is represented as a class that contains 4 fields: 
+int hash
+K key
+V value
+Node next
+
+Hashing
+
+Hashing is a process of converting an object into integer form by using the method hashCode().
+Its necessary to write hashCode() method properly for better performance of HashMap.
+
+hashCode() method
+hashCode() method is used to get the hash Code of an object.
+hashCode() method of object class returns the memory reference of object in integer form.
+
+Buckets
+A bucket is one element of HashMap array. 
+It is used to store nodes.
+Two or more nodes can have the same bucket. 
+In that case link list structure is used to connect the nodes
+Buckets are different in capacity. A relation between bucket and capacity is as follows: 
+capacity = number of buckets * load factor
+
+Please see 
+https://www.geeksforgeeks.org/internal-working-of-hashmap-java/
