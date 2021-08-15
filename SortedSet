@@ -1,0 +1,28 @@
+Child of Set(I)
+-duplicates are not allowed
+-Elements should be inserted according to some order
+
+Methods-
+Object first()
+Object last()
+SortedSet headSet(x)---returns all elements less than x
+SortedSet tailSet(x)--returns all elements which are >=x
+SortedSet subSet(x,y)...x inclusive, y exclusive
+Comaparator comparator()---return Comparator which defines underlying sorting technique
+
+
+Treeset
+-underlying DS is balanced Tree
+-duplicates not allowed
+-heterogeneous objects not allowed
+-null not allowed
+-Implements Serializable,Cloneable
+-Elements will be inserted on some sorting order
+-If we are depending on default sorting order compulsory elements should be homogeneous
+String and Wrapper classes implement Comparable interface
+- TreeSet serves as an excellent choice for storing large amounts of sorted information 
+which are supposed to be accessed quickly because of its faster access and retrieval time.
+
+When we implement a TreeSet, it creates a TreeMap to store the elements. It sorts the elements either naturally or using the user define comparator.
+
+When the object of a TreeSet is created, it automatically invokes the default constructor and creates an object of TreeMap and assigns comparator as null
