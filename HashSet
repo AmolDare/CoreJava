@@ -27,3 +27,8 @@ So we can say that a Set achieves uniqueness internally through HashMap.
 As we know in a HashMap each key is unique and when we call put(Key, Value) method, it returns the previous value associated with key, 
 or null if there was no mapping for key. So in add() method we check the return value of map.put(key, value) method with null value.
 
+HashSet.                          LinkedHashset
+Insertion order not preserved.    preserved
+
+LinkedHashset is used to develope cache based applications where duplicates are not allowed and insertion order is preserved
+
