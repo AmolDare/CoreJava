@@ -1,0 +1,16 @@
+-Underlying DS is Resizable array or Growable array
+-Duplicates allowed,Insertion order preserved
+-heterogeneous elements are allowed
+-null insertion possible
+-every collection by default implements Serializable and Cloneable interface
+-ArrayList and vector class Implements RandomAccess Interface which is marker interface
+-can access any element with same speed.ArrayList is best choice if frequent operation is retrieval
+-worst choice if frequent operation is insertion or deletion
+
+ArrayList               Vector
+Not Thread safe         Thread safe
+high perfo              relatively low perfo
+non legacy              legacy
+
+-you can synchronize ArrayList by using Collections.synchronizedList() method
+
