@@ -1,0 +1,22 @@
+Array.                collection
+Fixed size            Growable
+Better performance    Relatively less
+Homogeneous data      can be heterogeneous
+Primitives+objects     Objects only
+
+//Colection-used to represent a Group of object as a single entity.
+
+Collection(I)
+-Methods
+  int size() --->returns size
+  boolean isEmpty();
+  boolean contains(Object o)
+  Iterator<E> iterator()-->Returns an iterator over the elements in this collection
+  Object[] toArray(); --->returns array of all elements in collection
+  boolean remove(Object o);
+  boolean containsAll(Collection<?> c);
+  boolean addAll(Collection<? extends E> c)
+  boolean removeAll(Collection<?> c)
+  boolean retainAll(Collection<?> c)---->removes from this collection all of its elements that are not contained in the specified collection.
+  void clear()--Removes all of the elements from this collection
+  
