@@ -1,0 +1,8 @@
+-Present in java.lang package
+-contains only one method 
+-used for default sorting
+ public int compareTo(Object obj2)
+         -returns -ve value if obj1 has to come before obj2
+         -returns +ve if obj1 has to come after obj2
+         -returns zero if both are equal
+         
