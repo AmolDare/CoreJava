@@ -1,0 +1,11 @@
+-Underlying DS is doubly linked list
+-Insertion order preserved,duplicates,heterogeneos elements allowed
+-Implements Serializable ,cloneable but not random access
+-Best choice if frequent operation is Insertion ,deletion
+-worst choice for frequent retrieval
+
+
+ArrayList.                    LinkedList
+best choice for retrieval.    Best Choice for insertion,updation
+elements will be stored in     Won't be stored in consecutive location
+consecutive memory location
