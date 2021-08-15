@@ -1,0 +1,5 @@
+-Indexed collection of fixed number of homogeneous elements
+-every element in array occupies same amount of space
+-In case of Object arrays,object references gets stored in Array
+-If we know index of element,retireval time will be same for any element O(1)
+-If we don't know index its O(n)
