@@ -1,0 +1,9 @@
+-in java.util
+-public int compare(Object obj1,Object obj2)
+            --returns -ve if obj1 has to come before obj2
+            --returns +ve if obj1 has to come after obj2
+            --returns 0 if both equal
+            
+            
+ For predefined classes which implements Comparable --use comparator to change default sorting
+ 
