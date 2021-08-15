@@ -1,0 +1,29 @@
+-Underlying ds is Hashtable
+-duplicates are not allowed,if we try to insert duplicate add method returns false
+-insertion order is not preserved
+-Objects are inserted based on hashcode
+-null insertion possible only once
+-heterogeneous objects are allowed
+-Implements Serializable and Cloneable interfaces
+-best choice for frequent search use case
+
+Internal Working
+public HashSet() {.  --->constructor of Hashset class
+        map = new HashMap<>();
+    }
+
+    // add method 
+    // it calls put() method on map object
+    // and then compares it's return value with null
+    public boolean add(E e) {
+        return map.put(e, PRESENT)==null;
+    }
+
+whenever we create a HashSet,
+it internally creates a HashMap and if we insert an element into this HashSet using add() method, 
+it actually call put() method on internally created HashMap object with element you have specified as it’s key and 
+constant Object called “PRESENT” as it’s value.
+So we can say that a Set achieves uniqueness internally through HashMap. 
+As we know in a HashMap each key is unique and when we call put(Key, Value) method, it returns the previous value associated with key, 
+or null if there was no mapping for key. So in add() method we check the return value of map.put(key, value) method with null value.
+
